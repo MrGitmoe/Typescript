@@ -1,0 +1,15 @@
+//Using TS we can define the types of arguments
+Ex.
+function circle(diam: number): string {
+  return 'Circumf = ' + Math.PI _ diam;
+}
+
+//The same example from above can be applied to arrow functions (ES6 arrow)
+const circle = (diam: number): string => 'Circumf = ' + Math.PI + diam;
+
+//You can also declare a funciton and not define it by using a function signature
+Ex.
+let sayHi: (name: string) => void;
+
+sayHi = (name:string) => console.log('Hi ' + name);
+sayHi('John'); // Hi John
