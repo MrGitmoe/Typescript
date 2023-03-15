@@ -1,0 +1,5 @@
+//This allows you to create a new name for an existing type
+//Useful in reducing code duplication.
+Ex.
+type StringorNum = string | number;
+let id: StringOrNum = 24;
