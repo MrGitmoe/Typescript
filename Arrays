@@ -1,0 +1,12 @@
+//Similar to normal arrays we can define what kind of data an array can contain
+let ids: number[] = [];
+ids.push(1);
+ids.push("2"); // Error
+
+//Use a union type for arrays with mutple types of data
+let options: (string | number)[];
+options = [10, 'UP'];
+
+//If a value is assigned, TS will infer the array types
+let person = ['John', 45]
+person[0] = true; //Error - only strings or numbers allowed
