@@ -1,0 +1,14 @@
+//Compile a TS file in a JS file of the same name in the same directory
+//Ex. index.ts --> index.js
+tsc index.ts
+
+//Compile a TS file whenever a change is saved
+//Adds the watch flage
+tsc index.ts -w
+
+//Compile a TS file into a specified output
+tsc index.ts --outfile out/script.js
+
+//If not specifying a file, TS will compile all files in the rootDir, and output in the outDir
+tsc -w
+
