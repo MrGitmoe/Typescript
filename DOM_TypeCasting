@@ -1,0 +1,6 @@
+//TS doesn't have access to the dom so in order to properly acknowledge values: use the non-null operator
+Ex. 
+const link = document.queryselector('a')!;
+
+//If an element is selected by id or class we need to tell TS what type of element it is by casting the data type
+const form = document.getElementByID('signup-form') as HTMLFormElement;
