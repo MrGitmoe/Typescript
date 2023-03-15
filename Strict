@@ -1,0 +1,7 @@
+//In the tsconfig.js it is recommended to set strict to true
+//One useful feature of strict mode is No Implicit Any
+Ex.
+Error: Parameter 'a' implicitly has an 'any' type,
+function logName(a) (
+  console.log(a.name);
+ )
