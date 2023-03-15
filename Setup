@@ -8,3 +8,14 @@ tsc -v
 //Set the root and oupt directories in the tsconfig.json file
 "rootDir": "./src",
 "outDir": "./public",
+
+//Steps
+1.)Install
+npm install -g typescript
+
+2.)Check the version you are using
+tsc - v
+
+3.)In project directory, link TS to the specific project
+npm link typescript
+
