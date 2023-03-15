@@ -1,0 +1,10 @@
+//In Command Prompt
+//Install TypeScript on machine
+i -g typescript
+
+//Check versioning of installed typescript
+tsc -v
+
+//Set the root and oupt directories in the tsconfig.json file
+"rootDir": "./src",
+"outDir": "./public",
