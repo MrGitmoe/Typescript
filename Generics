@@ -1,0 +1,29 @@
+//Allows for type safety in components where their arguments and return types are unkown ahead of time
+//This is useful for user input
+interface HasLength {
+  length: number;
+}
+
+const logLength = <T extends HasLength> (a: T) => 
+  console.log(a.length);
+};
+
+logLength('Hello');
+
+logLength<number[]>([1, 2, 3]);
+
+//Declaring a type that can change in your interface
+inteface Dog<t> {
+  breed: string,;
+  treats: T;
+}
+
+let labrador: Dog<string> = {
+  breed: 'labrador',
+  treats: 'chew sticks, tripe'
+};
+
+let scottieDog: Dog<string[]> = {
+  breed: 'scottish terrier',
+  treats: ['turkey', 'haggis'],
+};
