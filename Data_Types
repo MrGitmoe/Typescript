@@ -1,0 +1,47 @@
+//Basic
+//There are 7 basic data types used
+{
+  string,
+  number,
+  bigint,
+  boolean,
+  undefined,
+  null,
+  symbol
+}
+Ex.
+let firstname: string = 'John'
+
+//Union
+//These are variables that can be assigned more than one type
+Ex.
+let age: number | string;
+age = 26;
+age = "26";
+
+//Dynamic
+//Known as type 'any' will rever TS backinto JS
+Ex.
+let age: any = 100;
+age = true;
+
+//Literal
+//Refers to strings and numbers in type positions
+Ex.
+let direction: 'UP' | 'DOWN';
+direction = 'UP';
+
+//Objects
+//Objects in TS must have all the correct properties and value types
+Ex.
+let person: {
+  name: string;
+  isProgrammer: boolean;
+};
+
+person = {
+  name: 'John',
+  isProgrammer: true,
+};
+person.age = 26; //Error - no age prop on person object
+person.IsProgrammer = 'yes'; //Error - should be boolean
