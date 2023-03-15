@@ -1,0 +1,5 @@
+//A type of array with a fix size and know data type for each index
+//They're stricter with data than a normal array
+Ex.
+let options: [string, number];
+options = ['UP', 10];
