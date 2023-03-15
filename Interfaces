@@ -1,0 +1,34 @@
+//Used to apply types to like objects
+//Can always be reopened and extended unlike and alias
+interface Person {
+  name: string;
+  isProgrammer: boolean;
+}
+
+let p1: Person = {
+  name: 'John',
+  isProgrammer: false,
+};
+
+//There are two ways to describe a function in an interface
+interface Speech {
+  sayHi(name: string): string;
+  sayBye: (name: string) => 'Bye '+ name,
+};
+
+let speech: Speech = {
+  sayHi: function (name:string) {
+  return 'Hi ' + name;
+  },
+  sayBye: {name: string} => 'Bye ' + name,
+};
+
+//Extending an interface
+//We would want to extend an interface in order to include additional types to our objects
+interface Animal (
+  name: string;
+)
+
+interface Dog extends Animal {
+  breed: string;
+ }
