@@ -1,0 +1,12 @@
+//Transpiling allows you to generate ECMAScript
+This means that you can write code that is compatible with old browsers, while still using the newest tools
+
+//TS supports JS libraries and API documentation
+Including Jquery, React, and more you can use tools you're already used to
+
+//TS introduces static typing
+Helps structure your code and improve OOP techniques. 
+It also makes the code easier to reactor since you can navigate to refrences of function members
+
+//TS uses NPM
+Gives access to millions of libraries
